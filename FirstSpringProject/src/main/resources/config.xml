@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans   
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- <bean id="objectname" class="classname"> <property name="variable" 
+		value="val" /> ............ </bean> Each bean tag allows to create an object 
+		for java bean class. -->
+		
+	<!-- Setter D I -->
+	<bean id="stdObj" class="com.spring.bean.Student">
+		<property name="rollno" value="1001" />
+		<property name="sname" value="Praveen" />
+		<property name="course" value="Java" />
+		<property name="fees" value="10000.00" />
+	</bean>
+</beans>
