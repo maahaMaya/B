@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<context:annotation-config />
+	
+	<bean id="adrs1"  class="com.core.beans.Address">
+			<property name="dno" value="D.No. 11-121/A"/>
+			<property name="loc" value="Hyderabad"/>
+			<property name="phone" value="9988123456"/>
+	</bean>
+	
+	<bean id="adrs2"  class="com.core.beans.Address">
+			<property name="dno" value="D.No. 11-123/A"/>
+			<property name="loc" value="Hyderabad"/>
+			<property name="phone" value="9988123789"/>
+	</bean>
+	
+	<bean id="empObj"  class="com.core.beans.Employee">
+		<property name="empno" value="1001"/>
+		<property name="ename" value="Satyam"/>
+	</bean>
+	
+	<!-- Student and Course -->
+	
+	<bean id="curObj1"  class="com.core.beans.Course">
+		<constructor-arg name="cname"  value="JAva"/>
+		<constructor-arg name="duration" value="6 Months"/>
+	</bean>
+	
+	<bean id="curObj2"  class="com.core.beans.Course">
+		<constructor-arg name="cname"  value="Python"/>
+		<constructor-arg name="duration" value="5 Months"/>
+	</bean>
+	
+	<bean id="stdObj"  class="com.core.beans.Student">
+		<constructor-arg name="rollno" value="101"/>
+		<constructor-arg name="sname" value="Pavan"/>
+	</bean>
+</beans>
