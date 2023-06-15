@@ -1,6 +1,6 @@
 package com.jdbc.apps;
 
-import java.util.List;
+import java.util.List; 
 import java.util.Scanner;
 
 import org.springframework.context.ApplicationContext;
